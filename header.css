@@ -1,7 +1,32 @@
 .menuhamburger{
 width: 24px;
 height: 24px;
-background-image: ;
+background-image: url(./Menu.svg);
+background-repeat: no-repeat;
+background-position: center;
 display: inline-block;
 }
 
+.cabecalho{
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteiner{
+    display: flex;
+    align-items: center;
+}
+
+.conteiner__imagem{
+    padding: 1em;
+}
+
+.lista-menu{
+    display: none;
+}
+
+.conteiner__botao:checked ~ .lista-menu{
+    display: block;
+}
